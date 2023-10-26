@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+}
+h1 {
+  display: flex;
+  padding: 10px;
+  color: beige;
+  font-weight: 700;
+}
+.box {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.button-container {
+  text-align: center; /* Center the buttons within the container */
+}
+.my-button {
+  border: none;
+  border-radius: 50%;
+  width: 100px; /* Adjust the width and height as needed */
+  height: 100px; /* Adjust the width and height as needed */
+  background-image: linear-gradient(135deg, #fffaf7, #e6a6bd);
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+button::before {
+ color: white;
+}
+
+@keyframes movingBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  background-size: 200% 200%;
+  animation: movingBackground 10s infinite alternate;
+}
+@media screen and (max-width: 600px) {
+  @keyframes movingBackground {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
