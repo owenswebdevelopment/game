@@ -15,14 +15,21 @@ height: 100vh;
 }
 
 .button-container {
-  text-align: center; /* Center the buttons within the container */
+  text-align: center;
 }
 .my-button {
+  cursor: pointer;
   border: none;
   border-radius: 50%;
-  width: 100px; /* Adjust the width and height as needed */
-  height: 100px; /* Adjust the width and height as needed */
+  width: 100px;
+  height: 100px;
   background-image: linear-gradient(135deg, #fffaf7, #e6a6bd);
+  transition: transform 0.5s ease-in-out; /* Added transition property */
+}
+
+.my-button:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+  background-image: linear-gradient(135deg, #53e52e, #e6bd6f);
 }
 
 .video-background {
