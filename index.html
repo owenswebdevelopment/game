@@ -1,142 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Rock Paper Scissors Gmae</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="#">Owen's Portfo<span>lio</span></div>
+<ul class="menu">
+<li><a href="#home" class="menu-btn">Home</a></li>
+<li><a href="#about" class="menu-btn">About</a></li>  
+<li><a href="#services" class="menu-btn">Services</a></li>  
+<li><a href="#skills" class="menu-btn">SKills</a></li>  
+<li><a href="#contact" class="menu-btn">Contact</a></li>      
+</ul>
+<div class="menu-btn">
+    <i class="fas fa-bars"></i>
+</div>
+</div>
+</nav>    
 
-  <body>
+<!--home section start-->
+<section class="home" id="home">
+<div class="max-width">
+    <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2"> Owen Newsome</div>
+        <div class="text-3">I am a <span class="typing">Web Developer</span></div>
+        <a href="#contact">Hire Me</a>
+    </div>
+</div>
+</section>
+<!--about section start-->
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="img/owen no filter.jpg" alt="Owen's image">
+            </div>
+            <div class="column right">
+                <div class="text">I am Owen and I am a <span class="typing-2">Web Developer</span></div>
+                <p>A highly skilled and results-driven web developer with 4 years of experience in designing and developing exceptional websites. Proficient in front-end and back-end technologies, I combine creativity with technical expertise to deliver engaging and user-friendly online experiences.</p>
+                <a href="img/Owen D Resume.pdf" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--services section start-->
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">Services</h2>
+        <div class="serv-content">
+            <div class="serv">
+                <div class="box">
+                <i class="fa-solid fa-code"></i>
+                <div class="text"> Web Developer</div>
+                <p>If you are looking to develop a website, whichever CMS you you prefer, I have your back. Personally, I prefer using WordPress because of the limitless possibilities. Reach out to be ASAP and I will walk you through the steps in a free consultation.</p>
+            </div>
+            </div>
+
+            <div class="serv">
+                <div class="box">
+                <i class="fa-solid fa-wrench"></i>
+                <div class="text">Web Maintainance</div>
+                <p>If you are looking to develop a website, whichever CMS you you prefer, I have your back. Personally, I prefer using WordPress because of the limitless possibilities. Reach out to be ASAP and I will walk you through the steps in a free consultation.</p>
+            </div>
+            </div>
+
+            <div class="serv">
+                <div class="box">
+                <i class="fa-solid fa-list-check"></i>
+                <div class="text">Web Update</div>
+                <p>If you are looking to develop a website, whichever CMS you you prefer, I have your back. Personally, I prefer using WordPress because of the limitless possibilities. Reach out to be ASAP and I will walk you through the steps in a free consultation.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--skills section-->
     
-
-    <div class="box">
-      <div class="button-container">
-        <h1>Rock Scissors Paper</h1>
-        <button
-          class="my-button"
-          onclick="
-  const randomNumber = Math.random();
-  let computerMove = '';
-  
-  if (randomNumber >= 0 && randomNumber < 1 / 3) {
-   computerMove = 'rock';
-  } else if ( randomNumber >= 1 / 3 && randomNumber < 2 / 3 ) {
-   computerMove = 'paper';
-  } else if ( randomNumber >= 2 / 3 && randomNumber < 1) {
-   computerMove = 'scissors';
-  }
-  
-  console.log(computerMove);
-  let result = '';
-  
-  if (computerMove === 'rock') {
-    result = 'Tie.';
-  }else if ( computerMove === 'paper') {
-  result = 'You Lose.';
-    } else if (computerMove === 'scissors') {
-      result = 'You Win.';
-    }
-  
-  alert(`You pick rock. Computer picked ${computerMove}. ${result}`);
-  "
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" viewBox="0 0 350 350" xml:space="preserve"><path fill="#FFF" d="M179.286 61.141c.013.343.029.685.029 1.029 0 14.63-11.902 26.532-26.531 26.532-11.388 0-21.203-7.091-24.936-17.427 14.377-6.562 30.345-10.223 47.153-10.223 1.435 0 2.862.036 4.285.089z"/><path fill="#FF54A4" d="M234.914 271.883a25.6 25.6 0 0 1-12.512-22.005c0-14.124 11.492-25.614 25.617-25.614 9.397 0 17.829 5.036 22.324 13.062a114.835 114.835 0 0 1-35.429 34.557z"/><path fill="#9788E2" d="M277.693 224.359a39.359 39.359 0 0 0-7.472-6.74c-6.547-4.513-14.225-6.898-22.201-6.898-21.592 0-39.158 17.566-39.158 39.157 0 11.275 4.834 21.733 12.899 29.028-14.275 6.449-30.106 10.042-46.761 10.042-62.831 0-113.949-51.117-113.949-113.949 0-41.177 21.955-77.321 54.774-97.345a40.189 40.189 0 0 0 10.867 14.934 40.083 40.083 0 0 0 26.091 9.655c22.001 0 39.911-17.824 40.065-39.791 54.382 8.592 96.099 55.787 96.099 112.546.001 17.674-4.043 34.419-11.254 49.361z"/><path fill="#8478D6" d="M108.455 175c0-29.091 10.968-55.661 28.974-75.818a39.997 39.997 0 0 1-10.737-6.593 40.189 40.189 0 0 1-10.867-14.934C83.007 97.679 61.052 133.823 61.052 175c0 62.831 51.117 113.949 113.949 113.949 8.126 0 16.054-.861 23.702-2.486-51.495-10.938-90.248-56.757-90.248-111.463z"/><path fill="#88E5D9" d="M134.664 243.936c-9.707 0-17.604-7.897-17.604-17.604 0-9.707 7.897-17.604 17.604-17.604 9.706 0 17.603 7.896 17.603 17.604 0 9.706-7.897 17.604-17.603 17.604zM104.151 145.577c0-4.645 3.779-8.425 8.425-8.425s8.424 3.779 8.424 8.425c0 4.646-3.779 8.424-8.424 8.424s-8.425-3.779-8.425-8.424z"/><path fill="#FFF" d="M220.596 166.113c-11.387 0-20.65-9.264-20.65-20.65 0-11.387 9.264-20.651 20.65-20.651s20.65 9.264 20.65 20.651c0 11.386-9.263 20.65-20.65 20.65z"/><path fill="#EDEDED" d="M175 69.385c1.102 0 2.196.034 3.29.068a26.424 26.424 0 0 0 1.025-7.284c0-.344-.016-.686-.029-1.029-1.423-.053-2.85-.089-4.286-.089-16.808 0-32.776 3.661-47.153 10.223a26.345 26.345 0 0 0 3.639 6.758A113.323 113.323 0 0 1 175 69.385z"/><path fill="#EF4198" d="M229.811 257.287c0-14.124 11.492-25.614 25.617-25.614 5.12 0 9.946 1.504 14.012 4.162-4.666-7.153-12.619-11.571-21.42-11.571-14.125 0-25.617 11.49-25.617 25.614 0 8.738 4.438 16.724 11.576 21.406a25.557 25.557 0 0 1-4.168-13.997z"/><path fill="#041C3F" d="M292.469 125.373c-6.422-15.182-15.613-28.816-27.318-40.522-11.707-11.707-25.342-20.899-40.523-27.32a126.29 126.29 0 0 0-38.696-9.553c-.091-.009-.182-.018-.273-.023a129.602 129.602 0 0 0-10.658-.445c-17.208 0-33.905 3.372-49.627 10.021-15.182 6.421-28.816 15.613-40.523 27.32-11.706 11.706-20.898 25.34-27.319 40.522C50.881 141.095 47.51 157.792 47.51 175c0 17.208 3.372 33.905 10.021 49.627 6.421 15.183 15.613 28.816 27.319 40.523 11.707 11.706 25.34 20.897 40.523 27.319 15.723 6.65 32.419 10.021 49.627 10.021 17.208 0 33.905-3.371 49.627-10.021 15.182-6.422 28.816-15.613 40.523-27.319 11.705-11.706 20.897-25.34 27.318-40.523 6.65-15.723 10.022-32.419 10.022-49.627 0-17.208-3.371-33.905-10.021-49.627zM175 61.052c1.436 0 2.863.036 4.286.089.013.343.029.685.029 1.029 0 14.63-11.902 26.532-26.531 26.532-11.388 0-21.203-7.091-24.936-17.427 14.376-6.562 30.344-10.223 47.152-10.223zm59.914 210.831a25.6 25.6 0 0 1-12.512-22.005c0-14.124 11.492-25.614 25.617-25.614 9.397 0 17.829 5.036 22.324 13.062a114.835 114.835 0 0 1-35.429 34.557zm42.779-47.524a39.359 39.359 0 0 0-7.472-6.74c-6.547-4.513-14.225-6.898-22.201-6.898-21.592 0-39.158 17.566-39.158 39.157 0 11.275 4.834 21.733 12.899 29.028-14.275 6.449-30.106 10.042-46.761 10.042-62.831 0-113.949-51.117-113.949-113.949 0-41.177 21.955-77.321 54.774-97.345a40.189 40.189 0 0 0 10.867 14.934 40.083 40.083 0 0 0 26.091 9.655c22.001 0 39.911-17.824 40.065-39.791 54.382 8.592 96.099 55.787 96.099 112.546.001 17.674-4.043 34.419-11.254 49.361z"/><path fill="#041C3F" d="M134.664 195.186c-17.174 0-31.147 13.973-31.147 31.146s13.972 31.146 31.147 31.146c17.174 0 31.146-13.972 31.146-31.146s-13.972-31.146-31.146-31.146zm0 48.75c-9.707 0-17.604-7.897-17.604-17.604 0-9.707 7.897-17.604 17.604-17.604 9.706 0 17.603 7.896 17.603 17.604 0 9.706-7.897 17.604-17.603 17.604zM112.576 123.61c-12.113 0-21.967 9.854-21.967 21.967s9.854 21.967 21.967 21.967c12.112 0 21.967-9.854 21.967-21.967s-9.855-21.967-21.967-21.967zm0 30.391c-4.646 0-8.425-3.779-8.425-8.424s3.779-8.425 8.425-8.425 8.424 3.779 8.424 8.425c0 4.645-3.779 8.424-8.424 8.424zM220.596 111.269c-18.854 0-34.193 15.338-34.193 34.193 0 18.854 15.34 34.192 34.193 34.192 18.855 0 34.193-15.339 34.193-34.192 0-18.854-15.339-34.193-34.193-34.193zm0 54.844c-11.387 0-20.65-9.264-20.65-20.65 0-11.387 9.264-20.651 20.65-20.651s20.65 9.264 20.65 20.651c0 11.386-9.263 20.65-20.65 20.65z"/><path fill="#69CCBE" d="M134.664 217.395c8.209 0 15.103 5.656 17.041 13.27.354-1.389.562-2.835.562-4.333 0-9.707-7.897-17.604-17.603-17.604-9.707 0-17.604 7.896-17.604 17.604 0 1.498.208 2.944.562 4.333 1.938-7.614 8.832-13.27 17.042-13.27zM112.576 145.819c3.06 0 5.735 1.645 7.211 4.091a8.358 8.358 0 0 0 1.213-4.333c0-4.645-3.779-8.425-8.424-8.425s-8.425 3.779-8.425 8.425c0 1.586.449 3.065 1.213 4.333 1.477-2.446 4.152-4.091 7.212-4.091z"/><path fill="#EDEDED" d="M220.596 133.478c9.9 0 18.187 7.005 20.185 16.317.3-1.398.466-2.846.466-4.333 0-11.387-9.264-20.651-20.65-20.651s-20.65 9.264-20.65 20.651c0 1.487.166 2.935.466 4.333 1.996-9.312 10.283-16.317 20.183-16.317z"/></svg>
-        Rock
-        </button>
-
-        <button
-          class="my-button"
-          onclick="
-      const randomNumber = Math.random();
-      let computerMove = '';
-      
-      if (randomNumber >= 0 && randomNumber < 1 / 3) {
-       computerMove = 'rock';
-      } else if ( randomNumber >= 1 / 3 && randomNumber < 2 / 3 ) {
-       computerMove = 'paper';
-      } else if ( randomNumber >= 2 / 3 && randomNumber < 1) {
-       computerMove = 'scissors';
-      }
-      
-      console.log(computerMove);
-      let result = '';
-      
-      if (computerMove === 'rock') {
-        result = 'You win.';
-      }else if ( computerMove === 'paper') {
-      result = 'Tie.';
-        } else if (computerMove === 'scissors') {
-          result = 'You lose.';
-        }
-      
-      alert(`You pick paper. Computer picked ${computerMove}. ${result}`);
-      "
-        ><svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve"><path style="fill:#e1defd" d="m67.591 87.082-.012 3.176L2.752 59.783v-3.175l64.839 30.474zM2.752 52.065v3.175l64.852 30.487.012-3.176L2.752 52.065zm0-4.258v2.892l64.877 30.5.012-2.843L2.752 47.807zm0 17.453v3.262l64.79 30.463.012-2.843L2.752 65.26zm0-4.111v2.745l64.803 30.881.025-3.163L2.752 61.149zm67.264 35.128-.012 2.966 55.535-17.305v-3.446L70.016 96.277zm.086-17.872-.012 2.954 55.448-17.293v-3.163L70.102 78.405zm-.024 4.246-.012 3.249 55.473-17.293V65.37L70.078 82.651zm-.025 4.542-.012 3.262 55.498-17.305v-3.237l-55.486 17.28zm-.012 4.554-.025 3.237 55.522-17.798v-2.732L70.041 91.747z"/><path style="fill:#675bf5" d="M126.548 56.139 57.216 25.972a2.375 2.375 0 0 0-1.674-.098L1.693 42.662a2.4 2.4 0 0 0-1.686 2.142c-.037.48.074.935.283 1.329v23.952l68.384 32.149L128 83.747V58.281a2.395 2.395 0 0 0-1.452-2.142zM67.542 98.984 2.752 68.522V65.26l64.803 30.881-.013 2.843zm.012-4.209L2.752 63.894v-2.745l64.827 30.463-.025 3.163zm.025-4.517L2.752 59.783v-3.175l64.84 30.475-.013 3.175zm.025-4.53L2.752 55.241v-3.175l64.864 30.487-.012 3.175zm.024-4.529-64.877-30.5v-2.892L67.64 78.356l-.012 2.843zm57.91.738L70.004 99.243l.012-2.966 55.522-17.785v3.445zm0-4.751L70.016 94.984l.025-3.237 55.498-17.293v2.732zm0-4.037L70.041 90.455l.012-3.262 55.485-17.281v3.237zm0-4.541L70.065 85.901l.012-3.249 55.461-17.281v3.237zm0-4.542L70.09 81.359l.012-2.954 55.436-17.502v3.163zm0-5.748L68.871 76.214 2.419 45.013 56.23 28.225l69.307 30.057v.012l.037.012-.036.012zm-68.065 9.319-.379-1.171 47.035-15.189.379 1.171-47.035 15.189zm-5.954-2.802-.373-1.173 47.06-14.965.373 1.173-47.06 14.965zm-5.502-2.592-.373-1.173 46.822-14.871.373 1.173-46.822 14.871zm-5.625-2.647-.365-1.176 46.96-14.609.365 1.176-46.96 14.609zm-5.272-2.483-.364-1.176 46.813-14.484.364 1.176L35.12 57.113zm-5.621-2.646-.362-1.177 46.671-14.344.362 1.177-46.671 14.344zm-5.534-2.779-.357-1.178 46.414-14.084.357 1.178-46.414 14.084zm-5.708-2.515-.357-1.178 46.369-14.073.357 1.178-46.369 14.073z"/></svg>
-          Paper
-        </button>
-
-        <button
-          class="my-button"
-          onclick="
-      const randomNumber = Math.random();
-      let computerMove = '';
-  
-      if (randomNumber >= 0 && randomNumber < 1 / 3) {
-        computerMove = 'rock';
-      }
-      else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-        computerMove = 'paper';
-      }
-      else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-        computerMove = 'scissors';
-      }
-      let result = '';
-  
-      if (computerMove === 'rock') {
-        result = 'You lose.';
-      }
-      else if (computerMove === 'paper') {
-        result = 'You win.';
-      }
-      else if (computerMove === 'scissors'){
-        result = 'You Tie.';
-      }
-      alert (`You picked scissors. Computer picked ${computerMove}. ${result}`);
-      "
-        ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 469.141 469.141" style="enable-background:new 0 0 469.141 469.141" xml:space="preserve"><path style="fill:#ff6e1d" d="m166.461 420.422 58.953-84.189-19.435-27.754c-.025-.035-.055-.064-.079-.1-.059-.085-.112-.173-.171-.258l-5.401-7.714c-15.693 14.371-39.995 16.57-59.335 4.157-16.845-10.811-37.22-14.071-57.373-9.173-21.669 5.264-40.505 19.382-51.678 38.733-10.685 18.507-13.523 40.066-7.993 60.708s18.769 37.894 37.276 48.578c36.004 20.787 81.246 10.905 105.236-22.988zm-65.892 19.562c-11.352-.001-22.571-3.016-32.448-8.718-15.035-8.681-25.79-22.696-30.284-39.467-4.493-16.77-2.187-34.285 6.494-49.32 11.577-20.052 33.166-32.508 56.342-32.508 11.348 0 22.567 3.015 32.445 8.718 15.035 8.681 25.79 22.696 30.284 39.467 4.493 16.77 2.188 34.285-6.493 49.32-11.578 20.052-33.166 32.508-56.34 32.508z"/><path style="fill:#f2484b" d="M385.523 295.391c-20.152-4.896-40.528-1.638-57.374 9.173-22.352 14.349-51.342 9.191-65.996-11.738l-11.203-16c-6.327-9.029-18.82-11.229-27.851-4.906-8.991 6.296-11.209 18.702-4.993 27.725l84.596 120.81c23.968 33.862 69.21 43.746 105.215 22.958 18.507-10.685 31.745-27.937 37.276-48.578s2.692-42.202-7.993-60.709c-11.173-19.353-30.008-33.471-51.677-38.735zm-145.643-1.799c-.308.31-.641.6-1.01.859a7.476 7.476 0 0 1-5.898 1.172 7.466 7.466 0 0 1-4.546-3.018 7.5 7.5 0 0 1 1.842-10.445 7.434 7.434 0 0 1 1.755-.903 7.486 7.486 0 0 1 4.993-.035 7.452 7.452 0 0 1 3.698 2.78c2.118 3.024 1.687 7.064-.834 9.59zM431.304 391.8c-4.494 16.771-15.249 30.786-30.284 39.467-9.878 5.703-21.097 8.718-32.445 8.718-23.176 0-44.766-12.456-56.342-32.508-8.681-15.035-10.986-32.551-6.493-49.32 4.494-16.771 15.249-30.786 30.284-39.467 9.878-5.703 21.097-8.718 32.445-8.718 23.176 0 44.765 12.456 56.342 32.508 8.68 15.034 10.986 32.55 6.493 49.32z"/><path style="fill:#98d9d5" d="m243.726 240.358 19.506 27.858 4.905 7.005L404.983 79.799c7.277-10.394 10.072-22.998 7.869-35.493-1.763-9.998-6.556-18.967-13.726-25.881l-155.4 221.933z"/><path style="fill:#fff" d="M105.969 69.771 70.016 18.426c-7.169 6.914-11.962 15.883-13.726 25.88-2.203 12.495.591 25.1 7.869 35.493L201.73 276.26a34.792 34.792 0 0 1 12.765-16.627 34.794 34.794 0 0 1 19.998-6.309L123.176 94.346a7.5 7.5 0 0 1 1.842-10.445l-8.604-12.287a7.499 7.499 0 0 1-10.445-1.843z"/><path style="fill:#082947" d="M163.401 358.156c-4.494-16.771-15.249-30.786-30.284-39.467-9.878-5.703-21.097-8.718-32.445-8.718-23.176 0-44.765 12.456-56.342 32.508-8.681 15.035-10.987 32.551-6.494 49.32 4.494 16.771 15.249 30.786 30.284 39.467 9.877 5.702 21.096 8.717 32.444 8.718 23.178 0 44.766-12.456 56.343-32.508 8.682-15.035 10.987-32.55 6.494-49.32zm-87.78 60.12c-11.565-6.678-19.838-17.459-23.294-30.358-3.457-12.899-1.683-26.373 4.995-37.938 8.906-15.425 25.517-25.008 43.352-25.008 8.718 0 17.344 2.319 24.945 6.708 11.565 6.677 19.838 17.459 23.295 30.358 3.456 12.899 1.683 26.373-4.995 37.938-8.907 15.426-25.518 25.009-43.352 25.008a49.98 49.98 0 0 1-24.946-6.708zM368.469 309.971c-11.348 0-22.567 3.015-32.445 8.718-15.035 8.681-25.79 22.696-30.284 39.467-4.493 16.77-2.188 34.285 6.493 49.32 11.577 20.052 33.166 32.508 56.342 32.508 11.348 0 22.567-3.015 32.445-8.718 15.035-8.681 25.79-22.696 30.284-39.467 4.493-16.77 2.187-34.285-6.494-49.32-11.576-20.051-33.165-32.508-56.341-32.508zm48.346 77.947c-3.456 12.899-11.729 23.681-23.294 30.358-7.601 4.388-16.227 6.708-24.945 6.708-17.834 0-34.446-9.583-43.352-25.008-6.677-11.565-8.451-25.039-4.995-37.938 3.457-12.899 11.729-23.682 23.295-30.358 7.601-4.389 16.227-6.708 24.945-6.708 17.834 0 34.446 9.583 43.352 25.008 6.676 11.565 8.45 25.038 4.994 37.938z"/><path style="fill:#082947" d="M450.19 326.625c-13.212-22.886-35.493-39.582-61.126-45.81-24.177-5.873-48.687-1.922-69.017 11.126-14.091 9.042-31.856 7.11-42.525-3.972L417.27 88.402c9.576-13.675 13.252-30.261 10.354-46.701-2.899-16.441-12.027-30.77-25.702-40.345a7.497 7.497 0 0 0-10.445 1.842L234.57 227.283 135.463 85.742a7.5 7.5 0 1 0-12.287 8.603l111.317 158.979a34.794 34.794 0 0 0-19.998 6.309 34.792 34.792 0 0 0-12.765 16.627L64.159 79.799c-7.277-10.394-10.072-22.998-7.869-35.493 1.763-9.997 6.556-18.966 13.726-25.88l35.953 51.346a7.498 7.498 0 0 0 10.445 1.842 7.5 7.5 0 0 0 1.842-10.445L77.665 3.199A7.5 7.5 0 0 0 67.22 1.357C53.545 10.932 44.417 25.26 41.518 41.701s.778 33.026 10.354 46.701L191.619 287.97c-10.668 11.083-28.433 13.014-42.524 3.972-20.33-13.049-44.84-16.999-69.015-11.126-25.635 6.227-47.915 22.924-61.128 45.81-12.688 21.977-16.059 47.579-9.491 72.09 6.568 24.512 22.288 44.999 44.265 57.687 14.571 8.413 30.902 12.74 47.427 12.739a95.1 95.1 0 0 0 20.621-2.266c23.095-5.127 43.313-18.547 56.954-37.818l55.844-79.749 55.867 79.781c13.618 19.24 33.837 32.66 56.932 37.787a95.04 95.04 0 0 0 20.622 2.266c16.523 0 32.856-4.327 47.427-12.739 21.977-12.688 37.697-33.175 44.265-57.687s3.194-50.116-9.495-72.092zm-4.997 68.209c-5.531 20.642-18.769 37.894-37.276 48.578-36.005 20.788-81.247 10.904-105.215-22.958l-84.596-120.81c-6.215-9.022-3.997-21.429 4.993-27.725 9.03-6.323 21.523-4.123 27.851 4.906l11.203 16c14.654 20.93 43.645 26.087 65.996 11.738 16.846-10.811 37.222-14.068 57.374-9.173 21.669 5.264 40.504 19.382 51.677 38.733 10.685 18.509 13.524 40.069 7.993 60.711zM61.225 443.411c-18.507-10.685-31.745-27.937-37.276-48.578s-2.692-42.201 7.993-60.708c11.173-19.352 30.009-33.47 51.678-38.733 20.153-4.898 40.528-1.638 57.373 9.173 19.341 12.413 43.643 10.214 59.335-4.157l5.401 7.714c.059.085.111.173.171.258.025.035.054.064.079.1l19.435 27.754-58.953 84.189c-23.99 33.892-69.232 43.774-105.236 22.988zM404.983 79.799 268.137 275.221l-4.892-6.987-19.519-27.876 155.4-221.934c7.169 6.914 11.962 15.883 13.726 25.881 2.203 12.496-.592 25.1-7.869 35.494z"/><path style="fill:#082947" d="M237.016 281.221a7.493 7.493 0 0 0-4.993.035 7.51 7.51 0 0 0-1.755.903 7.5 7.5 0 0 0-1.842 10.445 7.468 7.468 0 0 0 4.546 3.018 7.472 7.472 0 0 0 5.9-1.176 7.53 7.53 0 0 0 1.008-.855c2.521-2.525 2.952-6.565.834-9.59a7.454 7.454 0 0 0-3.698-2.78z"/></svg>
-          Scissors
-        </button>
-      </div>
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text"> My skills and experience</div>
+                    <p>My expertise lies in front-end development, where I excel in HTML, CSS, and JavaScript to bring designs to life. I am proficient in using modern frameworks and libraries such as React, Angular, or Vue.js to build dynamic and interactive web applications.</p>
+                    <a href="https://www.linkedin.com/in/owen-newsome-907b30137/">Read More</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS3</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line javas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="video-background">
-      <video autoplay muted loop>
-        <source
-          src="video/pexels_videos_2759483 (2160p).mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+    </section>
+    <!--this is for the works ive done-->
+    <section class="projects" id="projects">
+        <div max-width>
+            <h2 class="title">Projects</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                       <div class="box">
+                        <a href="https://nihongodekita.com/"><img src="img/sayaka web.jpg" alt="My work"></a>
+                        <div class="text">Nihongodekita</div>
+                        <p>Project 1:This is a website</p>
+                       </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <a href="https://thewritersportal876.com/"><img src="img/yadecka web.jpg" alt="My work"></a>
+                            <div class="text">Writers Portal</div>
+                            <p>Project 2:This is a website</p>
+                        </div> 
+                    </div>
+                     <div class="card">
+                        <div class="box">
+                            <a href="https://www.212english.com/"><img src="img/mike website.jpg" alt="My work"></a>
+                            <div class="text">212 English</div>
+                            <p>Project 3:This is a website</p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="box">
+                          <a href="https://owenswebdevelopment.github.io/popup.github.io/"><img src="img/newsletter pic 2.jpg" alt="My work"></a>
+                            <div class="text">Newsletter Form</div>
+                            <p>Project 4: This is a newsletter</p>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                      <a href="https://owenswebdevelopment.github.io/calculator/"><img src="img/Calculator app.jpg" alt="My work"></a>
+                        <div class="text">calculator app</div>
+                        <p>Project 5: This is a calculator app</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                  <a href="https://owenswebdevelopment.github.io/image-generator/"><img src="img/image generator.jpg" alt="My work"></a>
+                    <div class="text">Image Generator</div>
+                    <p>Project 6: This is an Image Generator app</p>
+                </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+              <a href="https://owenswebdevelopment.github.io/calculator/"><img src="img/Calculator app.jpg" alt="My work"></a>
+                <div class="text">calculator app</div>
+                <p>Project 5: This is a calculator app</p>
+            </div>
     </div>
+        </div>
+    </section>
 
-    <script>
-      /*if (false) {
-        console.log("hello");
-      } else {
-        console.log("else");
-      }
+    <!--contact section start-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in touch</div>
+                    <p>I am a rounded individual when it comes to websites. If you need something done, I am your guy!. I am a web developer and designer.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Owen Newsome</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Owen Newsome</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">melfordmalicahi@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" id="sendername" placeholder="Name" required>
+                            </div>
+                            <div class="field name">
+                                <input type="text" id="email_id" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field name">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea name="" id="message" cols="30" rows="10" placeholder="Describe Project.." required></textarea>
+                    </div>
+                    <div class="button">
+                        <button onclick="sendMail()">Send Message</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      const age = 25;
-
-      if (age >= 16) {
-        console.log("You are allowed to drive");
-      } else if (age >= 14) {
-        console.log("You are almost there!");
-      } else {
-        console.log("You are not allowed to drive");
-      }*/
-    </script>
-      </div>
-    </div>
-  </body>
+    <!--footer section will be here-->
+<footer>
+    <span class="gradient-text">Created By <a href="#" class="gradient-text">Owen Newsome using HTML, CSS & JavaScript</a> | <span class="far fa-copyright"></span> 2023 All Rights Reserved</span>
+</footer>
+<script src="index.js"></script>
+</body>
 </html>
