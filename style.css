@@ -55,7 +55,7 @@ button::before {
 }
 
 body {
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  background: linear-gradient(90deg, #b69168, #822949);
   background-size: 200% 200%;
   animation: movingBackground 10s infinite alternate;
 }
